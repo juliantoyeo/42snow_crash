@@ -15,6 +15,11 @@ According to Mr google and Sir Wikipedia, `pcap is Packet Capture API` which cap
 
 How could this file contain any clue? :thinking:
 
+(Easter Egg)
+It seems that this packet was from china :thinking:
+
+![alt text](./screenshot/image2.png)
+
 It seems that we could use a program called `wireshark (https://www.wireshark.org/#download)` to analyze this packet
 
 After we download the wireshark, we couldn't open the file because of the permissions issue, let's fix it
@@ -22,7 +27,28 @@ After we download the wireshark, we couldn't open the file because of the permis
 chmod 777 level02.pcap 
 ```
 
-(Easter Egg)
-It seems that this packet was from china :thinking:
+Now we can open the file and we will have a list of the communication that happened in this packet
 
-![alt text](./screenshot/image2.png)
+We can got Analyze -> Follow -> TCP stream
+
+![alt text](./screenshot/image3.png)
+
+Finally we have a more human readable text and we can see that `Password: ft_wandr...NDRel.L0L`
+
+Unfortunately that password is incorrect 😢😢😢
+
+Lets try to show the data in a different format such as `UTF-8`
+
+![alt text](./screenshot/image4.png)
+
+
+
+ft_wandr...NDRel.L0L
+ft_wandrNDRelL0L
+ft_waNDReL0L
+
+ft_wandrNDRelL0L
+f  t  _  w  a  n  d  r  .  .  .  N  D  R  e  l  .  L  0  L  .
+66 74 5f 77 61 6e 64 72 7f 7f 7f 4e 44 52 65 6c 7f 4c 30 4c 0d
+
+66745f77616e64727f7f7f4e4452656c7f4c304c0d
