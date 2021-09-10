@@ -39,3 +39,14 @@ cat sbin/john
 The result is very SUS, looks like its some secret code or something :thinking:
 
 ![alt text](./screenshot/image2.png)
+
+This secret code looks like a ciphered text, let try with https://www.dcode.fr/caesar-cipher and use brute force attack on it :innocent:
+
+![alt text](./screenshot/image3.png)
+
+There is many possible result, the one that is very readable is "nottoohardhere"
+Lets try it!
+
+![alt text](./screenshot/image4.png)
+
+Et voila! Its a success! not too hard indeed   :partying_face: :tada: :tada: :tada:
