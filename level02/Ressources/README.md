@@ -41,6 +41,14 @@ Lets try to show the data in a different format such as `UTF-8`
 
 ![alt text](./screenshot/image4.png)
 
+Now we have a different view of the password, which is `ft_wandrNDRelL0L` but this password is not working as well 😢😢😢
+
+WAIT A MINUTE!!
+
+If we try to type `ft_wandrNDRelL0L` by ourselves, the password will not be accepted,
+
+But if we copy the text directly from wireshark, the password is accepted!!
+
 
 
 ft_wandr...NDRel.L0L
