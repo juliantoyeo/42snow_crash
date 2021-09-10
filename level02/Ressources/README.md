@@ -29,7 +29,7 @@ chmod 777 level02.pcap
 
 Now we can open the file and we will have a list of the communication that happened in this packet
 
-We can got Analyze -> Follow -> TCP stream
+We can go to Analyze -> Follow -> TCP stream
 
 ![alt text](./screenshot/image3.png)
 
@@ -47,7 +47,15 @@ WAIT A MINUTE!!
 
 If we try to type `ft_wandrNDRelL0L` by ourselves, the password will not be accepted,
 
-But if we copy the text directly from wireshark, the password is accepted!!
+But if we copy the text directly from wireshark, the password is accepted!! Will is this happened?
+
+Turn out if we copy the text directly, we copied the special character as well `ft_wandrNDRelL0L`
+
+What are those special character and what did they do to our text string?
+
+If we go back to wireshark can show the data as `Hex Dump`, we could see the Hex code of those character
+> 66 74 5f 77 61 6e 64 72 7f 7f 7f 4e 44 52 65 6c 7f 4c 30 4c 0d
+> f  t  _  w  a  n  d  r  .  .  .  N  D  R  e  l  .  L  0  L  .
 
 
 
