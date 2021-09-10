@@ -22,8 +22,7 @@ After we download the wireshark, we couldn't open the file because of the permis
 chmod 777 level02.pcap 
 ```
 
+(Easter Egg)
 It seems that this packet was from china :thinking:
 
 ![alt text](./screenshot/image2.png)
-
-ft_wandrNDRelL0L
