@@ -43,28 +43,24 @@ Lets try to show the data in a different format such as `UTF-8`
 
 Now we have a different view of the password, which is `ft_wandrNDRelL0L` but this password is not working as well 😢😢😢
 
-WAIT A MINUTE!!
+**WAIT A MINUTE!!**
 
 If we try to type `ft_wandrNDRelL0L` by ourselves, the password will not be accepted,
 
-But if we copy the text directly from wireshark, the password is accepted!! Will is this happened?
+But if we copy the text directly from wireshark, the password is accepted!! Why is this happening?
 
 Turn out if we copy the text directly, we copied the special character as well `ft_wandrNDRelL0L`
 
 What are those special character and what did they do to our text string?
 
-If we go back to wireshark can show the data as `Hex Dump`, we could see the Hex code of those character
+If we go back to wireshark and show the data as `Hex Dump`, we could see the Hex code of those character
 > 66 74 5f 77 61 6e 64 72 7f 7f 7f 4e 44 52 65 6c 7f 4c 30 4c 0d
+> 
 > f  t  _  w  a  n  d  r  .  .  .  N  D  R  e  l  .  L  0  L  .
 
+According to `Man ASCII`, hex code `7f` is the control character which represent `DEL` and `0d` is just `/r`
 
+So if we apply the `DEL` operation manually, we could trim the password and the final password will be
+> ft_waNDReL0L
 
-ft_wandr...NDRel.L0L
-ft_wandrNDRelL0L
-ft_waNDReL0L
-
-ft_wandrNDRelL0L
-f  t  _  w  a  n  d  r  .  .  .  N  D  R  e  l  .  L  0  L  .
-66 74 5f 77 61 6e 64 72 7f 7f 7f 4e 44 52 65 6c 7f 4c 30 4c 0d
-
-66745f77616e64727f7f7f4e4452656c7f4c304c0d
+Finally, this is the correct password! What a long process 😢😢😢
