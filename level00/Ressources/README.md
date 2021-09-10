@@ -27,4 +27,15 @@ Since we are trying to change to user flag00 or maybe level00 we can try to use 
 ls -la */* | grep "flag\|level"
 ```
 
+And there we found our first clue!
+
 ![alt text](./screenshot/image1.png)
+
+Lets look at what is inside the file
+```console
+cat sbin/john
+```
+
+The result is very SUS, looks like its some secret code or something :thinking:
+
+![alt text](./screenshot/image2.png)
