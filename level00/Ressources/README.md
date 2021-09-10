@@ -16,4 +16,5 @@ It is proven to be very counter intuative as there is too much file to look at
 So lets try to tweet the command a little bit
 Since we are trying to change to user flag00 or maybe level00 we can try to use the "grep" command help us filter the info
 ls -la */* | grep "flag\|level"
-![alt text](/screenshot/image1.png)
+
+![alt text](./screenshot/image1.png)
