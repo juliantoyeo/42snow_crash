@@ -5,7 +5,7 @@
 Since the project hint that we should do "su flag00" and insert the password to pass this level,
 lets investigate on the "usr" folder
 
-First from our current location after we are connected, we must go to the root directory where everythin is located.
+First from our current location after we are connected, we must go to the root directory where everything is located.
 ```console
 cd /
 ```
