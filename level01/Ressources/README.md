@@ -43,5 +43,14 @@ docker ps
 
 Next we can copy the file into docker with this command
 ```console
-ddocker cp <src-path> <container_id>:<dest-path> 
+docker cp <src-path> <container_id>:<dest-path> 
 ```
+
+Finally use `John the Ripper` to crack the `passwd` that we have just copied into the docker
+```console
+john --show <file-path>
+```
+
+![alt text](./screenshot/image3.png)
+
+And at last, we have the password for flag01 which is `abcde`!    :partying_face: :tada: :tada: :tada:
