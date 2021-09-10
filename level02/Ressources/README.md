@@ -26,5 +26,4 @@ It seems that this packet was from china :thinking:
 
 ![alt text](./screenshot/image2.png)
 
-
-
+ft_wandrNDRelL0L
