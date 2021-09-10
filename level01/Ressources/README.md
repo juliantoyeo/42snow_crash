@@ -10,14 +10,14 @@ The first link looks promising, it mentioned about the following
 
 ![alt text](./screenshot/image2.png)
 
-This link also mentioned that there is a password cracker called "John the Ripper" that could be used to crack the "/etc/passwd" or "/etc/shadow"
+This link also mentioned that there is a password cracker called `John the Ripper` that could be used to crack the `/etc/passwd` or `/etc/shadow`
 
-Lets try and download the "/etc/passwd" from the snow_crash VM into our local machine
+Lets try and download the `/etc/passwd` from the snow_crash VM into our local machine
 ```console
 scp -P 4242 level01@<snow_crash_ip>:/etc/passwd .
 ```
 
-Since the project PDF mentioned that "If you plan to use a specific external software, you must set up a specific environment (VM, docker, Vagrant)"
+Since the project PDF mentioned that `If you plan to use a specific external software, you must set up a specific environment (VM, docker, Vagrant)`
 Lets get a docker 🐳 to run the JOHN :sunglasses:
 
 Guide to install docker and run ubuntu image for mac:
@@ -34,7 +34,7 @@ Inside the docker ubuntu
 apt update && apt-get install john
 ```
 
-Next to copy the "passwd" that we copied from snow_crash VM into our docker ubuntu
+Next to copy the `passwd` that we copied from snow_crash VM into our docker ubuntu
 
 First we need to get the `CONTAINER ID` from docker with this command
 ```console
