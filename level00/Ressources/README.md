@@ -1,16 +1,16 @@
 <h2>Level 00</h2>
 
-"su" command is used to switch to another user
+`su` command is used to switch to another user
 
-Since the project hint that we should do "su flag00" and insert the password to pass this level,
-lets investigate on the "usr" folder
+Since the project hint that we should do `su flag00` and insert the password to pass this level,
+lets investigate on the `usr` folder
 
 First from our current location after we are connected, we must go to the root directory where everything is located.
 ```console
 cd /
 ```
 
-Next nagivate to "usr" folder
+Next nagivate to `usr` folder
 ```console
 cd usr
 ```
@@ -22,7 +22,7 @@ ls -la */*
 
 It is proven to be very counter intuative as there is too much file to look at
 So lets try to tweet the command a little bit
-Since we are trying to change to user flag00 or maybe level00 we can try to use the "grep" command help us filter the info
+Since we are trying to change to user flag00 or maybe level00 we can try to use the `grep` command help us filter the info
 ```console
 ls -la */* | grep "flag\|level"
 ```
@@ -44,7 +44,7 @@ This secret code looks like a ciphered text, let try with https://www.dcode.fr/c
 
 ![alt text](./screenshot/image3.png)
 
-There is many possible result, the one that is very readable is "nottoohardhere"
+There is many possible result, the one that is very readable is `nottoohardhere`
 Lets try it!
 
 ![alt text](./screenshot/image4.png)
