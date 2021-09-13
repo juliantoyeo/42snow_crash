@@ -4,14 +4,14 @@ This time we are welcomed with a single file called `level03`
 
 We don't have much clue on this file unlike the previous level
 
-After a some search in google, here is a good link for read
+After some search in google, here is a good link for read
 `https://opensource.com/article/20/4/linux-binary-analysis`
 
-We will first be suggested to use the command `file` to know which that type of file is this
+We will first be suggested to use the command `file` to know which type of file this is
 
 ![alt text](./screenshot/image1.png)
 
-Now we could see that the file is `ELF 32-bit LSB executable` and with another quick search, if seems that we can run this file like a `C binary executable`, so lets go and run this file to see what it does
+Now we could see that the file is `ELF 32-bit LSB executable` and with another quick search, it seems that we can run this file like a `C binary executable`, so lets go and run this file to see what it does
 
 ![alt text](./screenshot/image2.png)
 
@@ -22,7 +22,7 @@ The file just print `Exploit me` and nothing else, lets try the other command th
 
 ---
 
-`ltrace` is a good command to analyze an executable, it give us the information of what is the function, including the parameters as well as the return value that the executable is using.
+`ltrace` is a good command to analyze an executable, it gives us the information on the function that is executed, including the parameters as well as the return value of the function.
 
 ![alt text](./screenshot/image3.png)
 
