@@ -11,26 +11,25 @@ Lets inspect the script with a simple `cat` command
 ![alt text](./screenshot/image2.png)
 
 Base on the script we can see the following
-
-> \# localhost:4747
-> 
-> use CGI qw{param};
+```console
+# localhost:4747
+use CGI qw{param};
+```
 
 This means that this script is using GCI (Common Gateway Interface) which allow us to execute it via web requests and the address is the `localhost:4747`
 
->print "Content-type: text/html\n\n";
-
+```console
+print "Content-type: text/html\n\n";
+```
 Nothing interesting here
 
-> sub x {
-> 
->  $y = $_[0];
->  
->  print \`echo $y 2>&1\`;
->  
-> }
-> 
-> x(param("x"));
+```console
+sub x { 
+  $y = $_[0];
+  print \`echo $y 2>&1\`;
+} 
+x(param("x"));
+```
 
 This is the core function of the script, the first line is defining a subroutine (like the function or method in other programming language)
 
