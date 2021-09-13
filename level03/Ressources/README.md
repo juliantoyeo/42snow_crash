@@ -53,7 +53,7 @@ Luckily `flag03` are the user that are able to the get the token from `getflag` 
 
 ---
 
-First we need to create a `fake echo`, unfortunaly as user `level03` our place to create a new file is very limited, but luckily we are freely to create anything in the `/tmp/`
+First we need to create a `fake echo`, unfortunately as user `level03` our location to create a new file is very limited, but luckily we are freely to create anything in the `/tmp/`
 
 Now we will create our `fake echo` which will run `whoami` to test if our solution is really working.
 
@@ -63,4 +63,14 @@ Lastly we will change the env PATH, so the `level03` echo will be using our `fak
 
 Now lets test the `level03` to see if our hypothesis is correct
 
+![alt text](./screenshot/image5.png)
 
+Voila!! The result of `whoami` shows that we are user `flag03`!!
+
+Which means if we change the `fake echo` into calling the `getflag` command, we could potentially get the token straight away!
+
+Lets try this!
+
+![alt text](./screenshot/image6.png)
+
+Finally we have succeded in exploting the file and get the token as our reward!! :partying_face: :tada: :tada: :tada:
