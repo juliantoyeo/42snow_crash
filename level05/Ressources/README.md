@@ -30,7 +30,20 @@ In this file, we can see that it is a script that runs every file or executable 
 
 After the file is executed, the file will be removed as well.
 
-# <h3>Final solution</h3>
+<h3>Final solution</h3>
 
+___
+
+Now we can write our own script and put it into the `/opt/openarenaserver`, and wait 2 minute to let the cron job do the task
+
+Since this is a background task, we need to save the executable result on a file so we could read it later on.
+
+![alt text](./screenshot/image4.png)
+
+Now lets wait for 2mins to wait for the delivery of out token!
+
+![alt text](./screenshot/image5.png)
+
+And here is our token, freshly delivered to our doorstep!! :partying_face: :tada: :tada: :tada:
 
 
