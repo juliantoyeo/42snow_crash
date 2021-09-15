@@ -44,5 +44,20 @@ In this line, we see the `replacement` is `"y(\"\\2\")"`, if we clean up the esc
 
 Base on the rule of the regex pattern, we can provided a string that align to this rule, and get our 2nd capturing group to be print out at the end of that php file
 
-We will use this string `[x ${``getflag``}]`
+We will create a file contains this string `[x ${``getflag``}]`, the 2nd capturing group will get the `${``getflag``}` out from the initial string
 
+In php, `${``a``}` is the same as `$a` which means the variable `a`, and php `echo` works the same as the normal shell command `echo` as well,
+
+So potentially, if we purposely cause an error on undefined variable, php will try to let us know which variable are the one that is reponsible by `echo` it
+
+`${``getflag``}` will cause an undefined variable error, as there is no ``getflag`` variable inside that php file.
+
+Throught php error management, it will try to do `echo "PHP Notice:  Undefined variable: ``getflag`` on line xx"`
+
+Since we know that placing a backtick between a string during an echo will cause it become an shell executable, this error message could potentially help us run the `getflag` command!
+
+Lets try it!
+
+![alt text](./screenshot/image4.png)
+
+Now, we have got the flag06 token as well!!  :partying_face: :tada: :tada: :tada:
