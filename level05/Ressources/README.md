@@ -40,7 +40,7 @@ Since this is a background task, we need to save the executable result on a file
 
 ![alt text](./screenshot/image4.png)
 
-Now lets wait for 2mins to wait for the delivery of out token!
+Now lets wait for 2mins to wait for the delivery of our token!
 
 ![alt text](./screenshot/image5.png)
 
