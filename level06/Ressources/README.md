@@ -2,9 +2,9 @@
 
 ![alt text](./screenshot/image1.png)
 
-In `level06` we found 2 files this time, one is a executable `level06` with `s` permission and `level06.php`
+In `level06` we found 2 files this time, an executable `level06` with `s` permission and `level06.php`
 
-Both files owner is `flag06` and with the `s` permission, we could potentially run the executable as that user and exploit it into called `getflag` for this level
+Both files owner is `flag06` and with the `s` permission, we could potentially run the executable as that user and exploit it into calling `getflag` for this level
 
 ![alt text](./screenshot/image2.png)
 
@@ -44,15 +44,15 @@ In this line, we see the `replacement` is `"y(\"\\2\")"`, if we clean up the esc
 
 Base on the rule of the regex pattern, we can provided a string that align to this rule, and get our 2nd capturing group to be print out at the end of that php file
 
-We will create a file contains this string `[x ${``getflag``}]`, the 2nd capturing group will get the `${``getflag``}` out from the initial string
+We will create a file contains this string ``[x ${`getflag`}]``, the 2nd capturing group will get the ``${`getflag`}`` out from the initial string
 
-In php, `${``a``}` is the same as `$a` which means the variable `a`, and php `echo` works the same as the normal shell command `echo` as well,
+In php, ``${`a`}`` is the same as `$a` which means the variable `a`, and php `echo` works the same as the normal shell command `echo` as well,
 
 So potentially, if we purposely cause an error on undefined variable, php will try to let us know which variable are the one that is reponsible by `echo` it
 
-`${``getflag``}` will cause an undefined variable error, as there is no ``getflag`` variable inside that php file.
+``${`getflag`}`` will cause an undefined variable error, as there is no ```getflag``` variable inside that php file.
 
-Throught php error management, it will try to do `echo "PHP Notice:  Undefined variable: ``getflag`` on line xx"`
+Through php error management, it will try to do ``echo "PHP Notice:  Undefined variable: `getflag` on line xx"``
 
 Since we know that placing a backtick between a string during an echo will cause it become an shell executable, this error message could potentially help us run the `getflag` command!
 
