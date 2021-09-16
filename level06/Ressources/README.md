@@ -50,7 +50,7 @@ In php, ``${`a`}`` is the same as `$a` which means the variable `a`, and php `ec
 
 So potentially, if we purposely cause an error on undefined variable, php will try to let us know which variable are the one that is reponsible by `echo` it
 
-``${`getflag`}`` will cause an undefined variable error, as there is no ```getflag``` variable inside that php file.
+``${`getflag`}`` will cause an undefined variable error, as there is no `` `getflag` `` variable inside that php file.
 
 Through php error management, it will try to do ``echo "PHP Notice:  Undefined variable: `getflag` on line xx"``
 
