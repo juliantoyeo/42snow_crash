@@ -30,7 +30,7 @@ From the analysis made by ltrace, we can see that the "Exploit me" was a result 
 
 This executable is calling the echo base on the env PATH `system("/usr/bin/env echo)`
 
-`/usr/bin/env` contained the PATH information on where the executable of `echo` is located.
+`/usr/bin/env` contained the PATH information on where the executable of `echo` is located, we can use `printenv` command or write `/usr/bin/env` directly on the terminal to read the content.
 
 This means that we could potentially write a `fake echo` and change the env PATH, and this `level03` executable will be calling our echo instead of the real one.
 
