@@ -16,7 +16,7 @@ It seems that it is echo out its own executable name, but lets check with `ltrac
 
 We can see that there is `getenv("LOGNAME)` with the return value of `level07` and below it, there is an `echo` command which was using that value.
 
-This is quite similar to the subject is `level03`, so we could try to change the `LOGNAME` env variable to ```getflag```, we could potentially exploit it
+This is quite similar to the subject is `level03`, so we could try to change the `LOGNAME` env variable to `` `getflag` ``, we could potentially exploit it
 
 ![alt text](./screenshot/image4.png)
 
