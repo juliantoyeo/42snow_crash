@@ -39,7 +39,7 @@ Let download the file and write some script to reverse it
 scp -P 4242 level09@[Machine_IP]:/home/user/level09/token [dest_path]
 ```
 
-Now time to write some script to test it
+Now time to write a python script to test it
 ```console
 import sys
 
