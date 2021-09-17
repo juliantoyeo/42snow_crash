@@ -38,5 +38,5 @@ So this could be the password for `flag08` user instead
 
 ![alt text](./screenshot/image6.png)
 
-So it seems what we get from the `token` file was the password for `flag08` and then we can call the `getflag` and gain the token for the next level~
+It seems what we got from the `token` file was the password for `flag08` and then we can call the `getflag` and gain the token for the next level~
 :partying_face: :tada: :tada: :tada:
