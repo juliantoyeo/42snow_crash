@@ -97,3 +97,6 @@ Eventually we will get the password from the token `woupa2yuojeeaaed06riuj63c`
 ![alt text](./screenshot/image9.png)
 
 Using this password, we finally get our flag for the next level~  :partying_face: :tada: :tada: :tada:
+
+*UPDATE*
+We could actually use `nc -lk 127.0.0.1 6969` and use the VM localhost instead of creating a python server, just learned this after attempt to solve level11 :(
