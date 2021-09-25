@@ -37,7 +37,8 @@ It seems that our hypothesis is correct, we can use the echo inside the `level11
 
 There we go! We have successfully received our flag for next level! It is quite an easy level :partying_face: :tada: :tada: :tada:
 
-*SPOILER*
+<h2>*SPOILER*</h2>
+
 Actually if we use the password that we got from level10 `woupa2yuojeeaaed06riuj63c` to su flag11, it could work as well!
 
 ![alt text](./screenshot/image6.png)
