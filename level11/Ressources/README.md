@@ -35,7 +35,7 @@ It seems that our hypothesis is correct, we can use the echo inside the `level11
 
 ![alt text](./screenshot/image5.png)
 
-There we go! We have successfully received our flag for next level! It is quite an easy level :partying_face: :tada: :tada: :tada:
+There we go! We have successfully received our flag for next level! This is quite an easy level :partying_face: :tada: :tada: :tada:
 
 <h2>*SPOILER*</h2>
 
