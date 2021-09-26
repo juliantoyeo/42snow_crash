@@ -2,7 +2,7 @@
 
 ![alt text](./screenshot/image1.png)
 
-In this level, we have `level12.pl` a perl script like back in level04 with `s` permission as well, lets check the file
+In this level, we have `level12.pl` a perl script like back in level04 with `s(SUID)` permission as well, lets check the file
 
 ![alt text](./screenshot/image2.png)
 
@@ -57,6 +57,3 @@ Now lets give `` `/*/GETFLAG` `` as the `param("x")` for the program with `curl`
 ![alt text](./screenshot/image6.png)
 
 And here we go! We got the flag thanks to the knowledge base in level04  :partying_face: :tada: :tada: :tada:
-
-
-

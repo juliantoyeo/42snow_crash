@@ -2,7 +2,7 @@
 
 ![alt text](./screenshot/image1.png)
 
-We have `level11.lua` this time with the `s` permissions like most of the previous level, lets check the content of this file
+We have `level11.lua` this time with the `s(SUID)` permissions like most of the previous level, lets check the content of this file
 
 ![alt text](./screenshot/image2.png)
 

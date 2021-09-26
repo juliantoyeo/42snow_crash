@@ -4,7 +4,7 @@ Upon arriving on `level04` lets see what we have this time
 
 ![alt text](./screenshot/image1.png)
 
-It seems that we have a `perl script` that have the same permission as the previous level, which means we could run this as `flag04`
+It seems that we have a `perl script` that have the same `s(SUID)` permission as the previous level, which means we could run this as `flag04`
 
 Lets inspect the script with a simple `cat` command
 

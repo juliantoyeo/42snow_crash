@@ -4,7 +4,7 @@
 
 We have a file called `level07` here and it looks like an executable.
 
-Like most of the previous level, this file has `s` permission and `flag07` as owner, ready for us to exploit it once again~
+Like most of the previous level, this file has `s(SUID)` permission and `flag07` as owner, ready for us to exploit it once again~
 
 Lets check what it does.
 

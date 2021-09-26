@@ -2,7 +2,7 @@
 
 ![alt text](./screenshot/image1.png)
 
-We have 2 files a well this time, the `level09` executable with `s` permission and `flag09` owner and a `token` file which return unreadable text
+We have 2 files a well this time, the `level09` executable with `s(SUID)` permission and `flag09` owner and a `token` file which return unreadable text
 
 ![alt text](./screenshot/image2.png)
 

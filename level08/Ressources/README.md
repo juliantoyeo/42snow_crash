@@ -2,7 +2,7 @@
 
 ![alt text](./screenshot/image1.png)
 
-In this level, we have the executable `level08` which is same as usual, `s` permission and `flag08` as owner
+In this level, we have the executable `level08` which is same as usual, `s(SUID)` permission and `flag08` as owner
 
 There is also a `token` file which we have no permission to run `cat` or even `file` to check it.
 

@@ -2,7 +2,7 @@
 
 ![alt text](./screenshot/image1.png)
 
-In `level06` we found 2 files this time, an executable `level06` with `s` permission and `level06.php`
+In `level06` we found 2 files this time, an executable `level06` with `s(SUID)` permission and `level06.php`
 
 Both files owner is `flag06` and with the `s` permission, we could potentially run the executable as that user and exploit it into calling `getflag` for this level
 

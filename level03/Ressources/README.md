@@ -35,7 +35,7 @@ This executable is calling the echo base on the env PATH `system("/usr/bin/env e
 This means that we could potentially write a `fake echo` and change the env PATH, and this `level03` executable will be calling our echo instead of the real one.
 
 
-<h3>Exploit No.2 's' file permision</h3>
+<h3>Exploit No.2 's(SUID)' file permision</h3>
 
 ---
 
@@ -44,7 +44,7 @@ This means that we could potentially write a `fake echo` and change the env PATH
 
 With `ls -la` we can see that the `level03` executable has the permission of `-rwsr-sr-x`
 
-The `s` in the permission, means that this executable will be run as the file owner itself, and in this case, the executable will be run as the user `flag03`
+The `s(SUID)` in the permission, means that this executable will be run as the file owner itself, and in this case, the executable will be run as the user `flag03`
 
 Luckily `flag03` are the user that are able to the get the token from `getflag` command. So combine with the previous explot, we could reach our final solution
 
