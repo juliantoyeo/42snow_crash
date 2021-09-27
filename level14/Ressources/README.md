@@ -23,7 +23,7 @@ But now lets find if there is a way to bypass the `ptrace`
 https://stackoverflow.com/questions/33646927/bypassing-ptrace-in-gdb
 ```
 
-There is someone this link that show us how to bypass the `ptrace` when we debug the program using `gdb`
+There is someone in this link that show us how to bypass the `ptrace` when we debug the program using `gdb`
 
 Lets try it!
 
