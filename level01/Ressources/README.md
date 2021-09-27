@@ -53,4 +53,4 @@ john --show <file-path>
 
 ![alt text](./screenshot/image3.png)
 
-And at last, we have the password for flag01 which is `abcde`!    :partying_face: :tada: :tada: :tada:
+And at last, we have the password for flag01 which is `abcdefg`!    :partying_face: :tada: :tada: :tada:
