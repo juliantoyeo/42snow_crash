@@ -57,6 +57,12 @@ The we can use the `jump (*address)` command to continue the program in the addr
 Here we go! The program continue from that address onward and give us the token  :partying_face: :tada: :tada: :tada:
 
 
+<h2>*UPDATE*</h2>
+
+After solving the `level14` exercise, it seems that we could modify the return of the `getuid()` with a `set ($eax) = 4242`
+
+That will be another to solve this exercise as well instead of using `jump`
+
 
 ```console
 Useful link:
