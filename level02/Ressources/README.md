@@ -64,3 +64,5 @@ So if we apply the `DEL` operation manually, we could trim the password and the 
 > ft_waNDReL0L
 
 Finally, this is the correct password! What a long process 😢😢😢
+
+![alt text](./screenshot/image5.png)
