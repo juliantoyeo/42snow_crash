@@ -58,7 +58,7 @@ If we go back to wireshark and show the data as `Hex Dump`, we could see the Hex
 > 
 > f  t  _  w  a  n  d  r  .  .  .  N  D  R  e  l  .  L  0  L  .
 
-According to `Man ASCII`, hex code `7f` is the control character which represent `DEL` and `0d` is just `/r`
+According to `Man ASCII`, hex code `7f` is the control character which represent `DEL` and `0d` is just `\r`
 
 So if we apply the `DEL` operation manually, we could trim the password and the final password will be
 > ft_waNDReL0L
