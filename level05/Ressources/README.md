@@ -22,7 +22,7 @@ Lets check that executable!
 
 ![alt text](./screenshot/image2.png)
 
-The owner of the file is `flag05`, but this time without the `s` permission, this won't be a problem as the cron job will be executing this as `flag05` anyway, so potentially we can hijack this file as well, lets check the content
+The owner of the file is `flag05`, but this time without the `s(SUID)` permission, this won't be a problem as the cron job will be executing this as `flag05` anyway, so potentially we can hijack this file as well, lets check the content
 
 ![alt text](./screenshot/image3.png)
 
