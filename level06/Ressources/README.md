@@ -46,7 +46,7 @@ Base on the rule of the regex pattern, we can provided a string that align to th
 
 We will create a file contains this string ``[x ${`getflag`}]``, the 2nd capturing group will get the ``${`getflag`}`` out from the initial string
 
-In php, ``${`a`}`` is the same as `$a` which means the variable `a`, and php `echo` works the same as the normal shell command `echo` as well,
+In php, ``${`a`}`` is the same as `$a` which means the variable `a`, and php `print` works the same as the normal shell command `echo` as well,
 
 So potentially, if we purposely cause an error on undefined variable, php will try to let us know which variable are the one that is reponsible by `echo` it
 
