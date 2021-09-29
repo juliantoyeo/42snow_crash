@@ -12,7 +12,7 @@ Running the `level08` executable, it will prompt us to use a file to read, and w
 
 ![alt text](./screenshot/image3.png)
 
-With `ltrace` we can see that it is using the `strstr` function to check if the `token` is a substring of `token` and the result is definetly true.
+With `ltrace` we can see that it is using the `strstr` function to check if the `token` is a substring of `token` and the result is definitely true.
 
 Then in the next line, we see there is the `printf` which gave us the message earlier
 
